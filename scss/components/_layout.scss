@@ -1,0 +1,21 @@
+// Headings
+
+h1 {
+	font-size: $h1-size;
+	@include headings;
+}
+
+h2 {
+	font-size: $h2-size;
+	@include headings;
+}
+
+h3 {
+	font-size: $h3-size;
+	@include headings;
+}
+
+h4 {
+	font-size: $h4-size;
+	@include headings;
+}

@@ -1,0 +1,7 @@
+@mixin headings {
+	color: $heading-color;
+	font-weight: $heading-font-weight;
+	font-family: $heading-family;
+	line-height: $heading-line-height;
+	letter-spacing: $heading-letter-spacing;
+}

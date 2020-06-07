@@ -1,0 +1,65 @@
+/*!
+ * 
+ * CSS Library
+ * 
+ * Author: Arturo Abreu
+ * 
+ */
+/* -------------------------------------------------------------------------- */
+/*                                   Config                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                          Variables for the libray                          */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                    Reset                                   */
+/* -------------------------------------------------------------------------- */
+*,
+:before,
+:after {
+  box-sizing: border-box; }
+
+:root {
+  font-size: 1rem; }
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff; }
+
+/* -------------------------------------------------------------------------- */
+/*                                 Components                                 */
+/* -------------------------------------------------------------------------- */
+h1 {
+  font-size: 3rem;
+  color: #333;
+  font-weight: bold;
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem; }
+
+h2 {
+  font-size: 2.25 rem;
+  color: #333;
+  font-weight: bold;
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem; }
+
+h3 {
+  font-size: 1.5 rem;
+  color: #333;
+  font-weight: bold;
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem; }
+
+h4 {
+  font-size: 1.125rem;
+  color: #333;
+  font-weight: bold;
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem; }
+
+/*# sourceMappingURL=main.css.map */
