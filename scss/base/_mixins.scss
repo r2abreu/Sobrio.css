@@ -4,4 +4,10 @@
 	font-family: $heading-family;
 	line-height: $heading-line-height;
 	letter-spacing: $heading-letter-spacing;
+	margin: 0.5rem 0;
+}
+
+@mixin parragraphs {
+	color: $p-color;
+	font-weight: $p-font-weight;
 }

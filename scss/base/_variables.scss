@@ -2,20 +2,33 @@
 //                          Variables for the libray                          */
 // -------------------------------------------------------------------------- */
 
-//
-// Typography
-//
+// ---------- Typography
 
-$heading-color: #333;
+// ----- Headings
+
+$heading-color: #111111;
 $heading-font-weight: bold;
-$heading-family: Verdana, Arial, sans-serif;
-
+$heading-family: Oswald, Verdana, Arial, sans-serif;
 $heading-line-height: 1.5rem;
 $heading-letter-spacing: 0.1rem;
-
 $h1-size: 3rem;
 $h2-size: 2.25 rem;
 $h3-size: 1.5 rem;
 $h4-size: 1.125rem;
 
+// ----- Parragraphs
 
+$p-color: #333;
+$p-font-weight: 400;
+$p-line-height: 1.5;
+
+// ----- Misc
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+	 (0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer * 1.5), 5: ($spacer * 3)),
+	$spacers
+);
+
+//
