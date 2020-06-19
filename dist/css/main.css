@@ -5,21 +5,8 @@
  * Author: Arturo Abreu
  * 
  */
-/* -------------------------------------------------------------------------- */
-/*                                   Config                                   */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                          Variables for the libray                          */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                                    Reset                                   */
-/* -------------------------------------------------------------------------- */
-*,
-:before,
-:after {
-  box-sizing: border-box; }
-
-:root {
+html {
+  box-sizing: border-box;
   font-size: 1rem; }
 
 body {
@@ -27,39 +14,31 @@ body {
   margin: 0;
   background-color: #fff; }
 
-/* -------------------------------------------------------------------------- */
-/*                                 Components                                 */
-/* -------------------------------------------------------------------------- */
-h1 {
-  font-size: 3rem;
+*,
+:before,
+:after {
+  box-sizing: inherit; }
+
+h1,
+h2,
+h3,
+h4 {
   color: #333;
   font-weight: bold;
   font-family: Verdana, Arial, sans-serif;
   line-height: 1.5rem;
   letter-spacing: 0.1rem; }
+
+h1 {
+  font-size: 3rem; }
 
 h2 {
-  font-size: 2.25 rem;
-  color: #333;
-  font-weight: bold;
-  font-family: Verdana, Arial, sans-serif;
-  line-height: 1.5rem;
-  letter-spacing: 0.1rem; }
+  font-size: 2.25 rem; }
 
 h3 {
-  font-size: 1.5 rem;
-  color: #333;
-  font-weight: bold;
-  font-family: Verdana, Arial, sans-serif;
-  line-height: 1.5rem;
-  letter-spacing: 0.1rem; }
+  font-size: 1.5 rem; }
 
 h4 {
-  font-size: 1.125rem;
-  color: #333;
-  font-weight: bold;
-  font-family: Verdana, Arial, sans-serif;
-  line-height: 1.5rem;
-  letter-spacing: 0.1rem; }
+  font-size: 1.125rem; }
 
 /*# sourceMappingURL=main.css.map */
