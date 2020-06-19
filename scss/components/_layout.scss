@@ -43,19 +43,65 @@ blockquote {
 	}
 }
 
-button {
-	border: none;
-	background-color: #111111;
-	padding: 0.7rem;
-	border-radius: 0.2rem;
-	color: #ffffff;
+// Buttom
 
-	&:hover,
-	&:focus,
-	&:active {
-		color: #111111;
-		background: #ffffff;
-		border: 1px solid #111111;
-		cursor: pointer;
+button {
+	@include buttons;
+}
+
+// Form
+
+label {
+	margin: 0.5rem 0;
+	font-weight: 400;
+}
+
+input:not([type*="checkbox"]):not([type="submit"]),
+select,
+textarea {
+	width: 100%;
+	margin: 0.5rem 0;
+	display: block;
+	padding: 0.4rem;
+}
+
+select {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==)
+		right center no-repeat;
+	-moz-appearance: none;
+	border: 1px solid #cdc7c2;
+	border-radius: 0.3rem;
+}
+
+textarea {
+	overflow: auto;
+	max-width: 100%;
+	border-radius: 0.3rem;
+	border: 1px solid #cdc7c2;
+}
+
+[type="submit"] {
+	@include buttons;
+	display: block;
+}
+
+// Tables
+
+table {
+	padding: 0.5rem;
+	width: 100%;
+	border-collapse: collapse;
+
+	tr:nth-child(even) {
+		background-color: #dadada;
+	}
+	th {
+		border-bottom: 0.2rem solid #111111;
+		padding: 0.5rem;
+	}
+
+	td {
+		border-bottom: 0.065rem solid #111111;
+		padding: 0.5rem;
 	}
 }
