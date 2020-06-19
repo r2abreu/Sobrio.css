@@ -1,12 +1,7 @@
 // Reset.
 
-*,
-:before,
-:after {
+html {
 	box-sizing: border-box;
-}
-
-:root {
 	font-size: 1rem;
 }
 
@@ -14,4 +9,9 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color: #fff;
+}
+*,
+:before,
+:after {
+	box-sizing: inherit;
 }
