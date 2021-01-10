@@ -1,0 +1,21 @@
+%buttons {
+	display: inline-block;
+	border: 0.065rem solid #ffffff00;
+	background-color: $button-background;
+	padding: 0.7rem;
+	border-radius: 0.2rem;
+	color: #ffffff;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: #111111;
+		background: #ffffff;
+		border: 0.065rem solid #111111;
+		cursor: pointer;
+	}
+}
+
+#{$buttons} {
+	@extend %buttons;
+}

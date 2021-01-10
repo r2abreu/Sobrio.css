@@ -2,22 +2,59 @@
 //                          Variables for the libray                          */
 // -------------------------------------------------------------------------- */
 
+// ---------- Colors
+
+$background: #fff !default;
+$primary-color: #2f97c1 !default;
+$secondary-color: #0d1321 !default;
+
 // ---------- Typography
+
+// ------ Body
+
+$font-size: 1rem !default;
+$font-style: normal !default;
+$font-family: 'Roboto Condensed', Verdana, Arial, sans-serif !default;
+$font-variant: normal !default;
+$font-weight: normal !default;
+$font-color: #404040 !default;
+$line-height: 1.6 !default;
 
 // ----- Headings
 
-$heading-color: #111111;
-$heading-font-weight: bold;
-$heading-family: Oswald, Verdana, Arial, sans-serif;
-$heading-line-height: 1.5rem;
-$heading-letter-spacing: 0.1rem;
-$h1-size: 3rem;
-$h2-size: 2.25 rem;
-$h3-size: 1.5 rem;
-$h4-size: 1.125rem;
+$heading-color: #111111 !default;
+$heading-font-weight: bold !default;
+$heading-font-family: Oswald, Verdana, Arial, sans-serif !default;
+$heading-line-height: 1.2rem !default;
+$heading-letter-spacing: 0.1rem !default;
+
+$h1: 3rem !default;
+$h2: 2.25rem !default;
+$h3: 1.5rem !default;
+$h4: 1.125rem !default;
 
 // ----- Parragraphs
 
-$p-color: #333;
-$p-font-weight: 400;
-$p-line-height: 1.5;
+$p-color: #333 !default;
+$p-font-weight: 400 !default;
+$p-line-height: 1.5 !default;
+
+// ---------- Spacing
+
+$margins: 1.5rem !default;
+$padding: 1rem !default;
+$content-padding: 60px !default;
+
+// ---------- Borders
+
+$border-width: 1px !default;
+$border-style: solid !default;
+$border-color: #cdc7c2 !default;
+$border-radius: 0.3em !default;
+$borders: $border-width $border-style $border-color !default;
+
+// ---------- Buttons
+
+$buttons: ('button, .a.button, button, [type="submit"], [type="reset"], [type="button"]') !default;
+$button-background: $primary-color !default;
+$button-background-hover: darken($button-background, 5%) !default;

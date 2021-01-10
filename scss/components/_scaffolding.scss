@@ -1,3 +1,9 @@
+// HTML
+
+html {
+	font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
+}
+
 // Headings
 
 h1,
@@ -5,22 +11,27 @@ h2,
 h3,
 h4 {
 	@include headings;
+	margin: $margins 0;
+
+	&:not(:first-child) {
+		margin: 1.5rem 0;
+	}
 }
 
 h1 {
-	font-size: $h1-size;
+	font-size: $h1;
 }
 
 h2 {
-	font-size: $h2-size;
+	font-size: $h2;
 }
 
 h3 {
-	font-size: $h3-size;
+	font-size: $h3;
 }
 
 h4 {
-	font-size: $h4-size;
+	font-size: $h4;
 }
 
 p {
@@ -30,7 +41,7 @@ p {
 // Blockquote
 
 blockquote {
-	border-left: 0.3rem solid #111111;
+	border-left: 0.3rem solid $primary-color;
 	border-radius: 2px 0 0 2px;
 	padding: 0 0.5rem;
 	font-size: 1.5rem;
@@ -41,12 +52,6 @@ blockquote {
 		text-align: right;
 		font-size: 1rem;
 	}
-}
-
-// Buttom
-
-button {
-	@include buttons;
 }
 
 // Form
@@ -63,26 +68,21 @@ textarea {
 	margin: 0.5rem 0;
 	display: block;
 	padding: 0.4rem;
+	border: $borders;
 }
 
 select {
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==)
 		right center no-repeat;
 	-moz-appearance: none;
-	border: 1px solid #cdc7c2;
-	border-radius: 0.3rem;
+	border: $borders;
 }
 
 textarea {
 	overflow: auto;
 	max-width: 100%;
-	border-radius: 0.3rem;
-	border: 1px solid #cdc7c2;
-}
-
-[type="submit"] {
-	@include buttons;
-	display: block;
+	border: $borders;
+	border-radius: $border-radius;
 }
 
 // Tables
@@ -93,7 +93,7 @@ table {
 	border-collapse: collapse;
 
 	tr:nth-child(even) {
-		background-color: #dadada;
+		background-color: #e0e0e0;
 	}
 	th {
 		border-bottom: 0.2rem solid #111111;

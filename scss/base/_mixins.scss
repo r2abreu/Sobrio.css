@@ -1,7 +1,7 @@
 @mixin headings {
 	color: $heading-color;
 	font-weight: $heading-font-weight;
-	font-family: $heading-family;
+	font-family: $heading-font-family;
 	line-height: $heading-line-height;
 	letter-spacing: $heading-letter-spacing;
 	margin: 0.5rem 0;
@@ -10,21 +10,4 @@
 @mixin parragraphs {
 	color: $p-color;
 	font-weight: $p-font-weight;
-}
-
-@mixin buttons {
-	border: 0.065rem solid #ffffff00;
-	background-color: #111111;
-	padding: 0.7rem;
-	border-radius: 0.2rem;
-	color: #ffffff;
-
-	&:hover,
-	&:focus,
-	&:active {
-		color: #111111;
-		background: #ffffff;
-		border: 0.065rem x solid #111111;
-		cursor: pointer;
-	}
 }
